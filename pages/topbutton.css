@@ -1,0 +1,68 @@
+#backToTop {
+    position: fixed;
+    bottom: 25px; 
+    right: 25px;  
+    z-index: 9999; 
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+    background-color: #000000; 
+    color: #ffe876;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 26px;
+    
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+    opacity: 0;
+    transform: translateY(15px);
+    pointer-events: none;
+}
+
+#backToTop.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#backToTop:hover {
+    background-color: #ffe876; 
+    color: #000000;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px); 
+}
+
+#backToTop:active {
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    #backToTop {
+        bottom: 15px; 
+        right: 15px;
+        width: 42px;  
+        height: 42px;
+        font-size: 22px; 
+        background-color: rgba(0, 0, 0, 0.8); 
+    }
+
+    #backToTop:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffe876;
+        transform: none;
+    }
+    
+    #backToTop:active {
+        transform: scale(0.95);
+        background-color: #ffe876;
+        color: #000;
+    }
+}

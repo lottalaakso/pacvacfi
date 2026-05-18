@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Pacvac.fi - Tuotteet</title>
+    <script src="navbar.js"></script>
+    <link rel="stylesheet" href="topbutton.css">
+    <script src="topbutton.js"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="nav">
+        <div class="button">
+            <a href="home"><img src="../logo/pacvac-logo.png"></a>
+        </div>
+
+        <div class="nav_hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+
+        <div class="nav_menu">
+        <ul id="nav-links">
+            <li class="button"><span><a href="home">koti</a></span></li>
+            <li class="button"><span><a href="info">Pacvac?</a></span></li>
+            <li class="button"><span><a class="active" href="products">tuotteet</a></span></li>
+            <li class="button"><span><a href="contact">yhteydenotto</a></span></li>
+        </ul>
+    </div>
+    </nav>
+
+    <main class="page">
+        <div class="content">
+            <div class="tab-wrapper">
+                <div class="tab">
+                    <button class="tablinks" onclick="openProduct(event, 'Velo')" id="defaultOpen">Velo</button>
+                    <button class="tablinks" onclick="openProduct(event, 'PinkVelo')">Pink Velo</button>
+                    <button class="tablinks" onclick="openProduct(event, 'VeloGo')">Velo Go</button>
+                    <button class="tablinks" onclick="openProduct(event, 'VeloSuperpro')">Superpro</button>
+                    <button class="tablinks" onclick="openProduct(event, 'Superprogo')">Superpro go</button>
+                </div>
+            </div>
+    
+            <!-- Velo -->
+            <div id="Velo" class="tabcontent">
+                <div class="product-layout">
+                    <div class="product-description">
+                        <h1>Velo - Pieni ja pippurinen!</h1>
+                        <h4>TUOTEKOODI: VB002VE01A01 <span class="desktop-only">&emsp;|&emsp;</span> <span class="icon-group"><span class="material-symbols-outlined google-icon">power</span>Johdollinen</span></h4>
+                        <p>
+                            Kevyt ja tarpeeksi pieni mahtuakseen ahtaisiin tiloihin, Velo on monipuolinen siivousväline sekä ammattilaisille että niille, jotka haluavat saavuttaa ammattimaisen laadun siivouksessa kotona.
+                            <br><br>
+                            Verkkovirralla toimiva Velo on yksi markkinoiden kevyimmistä reppuimureista. Sen 900 W:n moottori tuottaa voimakkaan imutehon kompaktissa, vain 3,9 kg painavassa laitteessa.
+                            <br><br>
+                            Velon vakiovarustukseen kuuluvat ergonomiset Ecoharness-valjaat, joiden paksu pehmustus takaa entistä mukavamman istuvuuden. Valjaat on valmistettu vähintään 50-prosenttisesti kierrätetystä rPet-materiaalista.
+                            <br><br>
+                            Velo on varustettu H13 HEPA Hypercone™ -suodattimella, joka tarjoaa nelivaiheisen suodatuksen. Se suodattaa tehokkaasti 99,95 % jopa 0,3 mikronin kokoisista pölyhiukkasista, taaten puhtaamman sisäilman.
+                        </p>
+                        <div class="pdf">
+                            <a href="../pdf/Velo (2024) - EU_FI.pdf" target="_blank" rel="noopener noreferrer">Lataa PDF-esite</a>
+                        </div>
+                    </div>
+                    <img src="../images/velo2.png" alt="Pacvac Velo reppuimuri">
+                </div>
+                <div class="bottom-grid">
+                    <div class="bottom-column box">
+                        <h3>Miksi valita verkkovirralla toimiva Velo?</h3>
+                        <ul style="line-height: 1.8; padding-left: 20px; font-size: 1rem; text-align: left;">
+                            <li><strong>Rajoittamaton käyttöaika:</strong> Siivoa suuria tiloja ilman taukoja tai akun lataamista.</li>
+                            <li><strong>Huippukevyt rakenne:</strong> Vain 3,9 kg paino tekee liikkumisesta vaivatonta.</li>
+                            <li><strong>HEPA H13 -suodatus:</strong> Optimaalinen poistoilman puhtaus herkkiinkin kohteisiin.</li>
+                            <li><strong>Ecoharness-valjaat:</strong> Markkinoiden johtava ergonomia ja kestävä kehitys kohtaavat.</li>
+                        </ul>
+                    </div>
+                    <div class="bottom-column">
+                        <div class="specs-box">
+                            <div class="spec-header">Tekniset tiedot</div>
+                            <div class="spec-row"><span class="spec-label">Moottori</span><span class="spec-value">900 W</span></div>
+                            <div class="spec-row"><span class="spec-label">Alipaine</span><span class="spec-value">18,6 kPa</span></div>
+                            <div class="spec-row"><span class="spec-label">Imuteho</span><span class="spec-value">192 W</span></div>
+                            <div class="spec-row"><span class="spec-label">Melutaso</span><span class="spec-value">65,3 dB(A)</span></div>
+                            <div class="spec-row"><span class="spec-label">Ilmavirtaus</span><span class="spec-value">28,2 L/s</span></div>
+                            <div class="spec-row"><span class="spec-label">Virtalähde</span><span class="spec-value">18 m virtajohto</span></div>
+                            <div class="spec-row"><span class="spec-label">Säiliö</span><span class="spec-value">2,5 L</span></div>
+                            <div class="spec-row"><span class="spec-label">Takuu</span><span class="spec-value">2 vuotta</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pink Velo -->
+            <div id="PinkVelo" class="tabcontent">
+                <div class="product-layout">
+                    <div class="product-description">
+                        <h1>Sama suorituskykyinen Velo – nyt rajoitettu erä <span style="color:pink">vaaleanpunaisena!</span></h1>
+                        <h4>TUOTEKOODI: VB002VE01A01 <span class="desktop-only">&emsp;|&emsp;</span> <span class="icon-group"><span class="material-symbols-outlined google-icon">power</span>Johdollinen</span></h4>
+                        <p>
+                        Tämä rajoitetun erän vaaleanpunainen Velo yhdistää ikonisen tyylin ja ammattitason tehon. Se on Pacvacin kysytyin malli, joka soveltuu täydellisesti niin kotiin kuin kevyeen ammattikäyttöön. 
+                        <br><br>
+                        Vain 3,9 kg painava Velo on yksi markkinoiden kevyimmistä reppuimureista. Kompaktista koosta huolimatta 900 W moottori ja 18 metrin johto tarjoavat vaikuttavan 1158 m<sup>2</sup> siivousalan ilman pistorasian vaihtoa.
+                        <br><br>
+                        Käyttömukavuudesta vastaavat ergonomiset ja pehmustetut Ecoharness-valjaat, jotka on valmistettu vähintään 50-prosenttisesti kierrätetystä rPet-muovista. 
+                        <br><br>
+                        H13 HEPA Hypercone™ -suodatin takaa puhtaan sisäilman suodattamalla 99,95 % jopa 0,3 mikronin pölyhiukkasista. Laitteessa on kätevä vedenkestävä virtakytkin ja mukana toimitetaan monikäyttöinen All purpose -lattiasuulake. Syväpuhdistukseen ja lemmikkitalouksiin suosittelemme lisävarusteena saatavaa Turbo-suulaketta.
+                        <br><br>
+                        <b>Huom: Vaaleanpunainen Velo on rajoitetun ajan erikoismalli. Tuotteita on saatavilla vain nopeimmille – tilaa omasi nyt, ettet jää paitsi tästä uutuudesta!</b>
+                        </p>
+                        <div class="pdf">
+                            <a href="../pdf/Pink Velo UK Flyer_A4.pdf" target="_blank" rel="noopener noreferrer">Lataa PDF-esite</a>
+                        </div>
+                    </div>
+                    <img src="../images/txt-pinkvelo.png" alt="Pink Velo image">
+                </div>
+                <div class="bottom-grid">
+                    <div class="bottom-column box">
+                        <h3>Miksi valita verkkovirralla toimiva Velo?</h3>
+                        <ul style="line-height: 1.8; padding-left: 20px; font-size: 1rem; text-align: left;">
+                            <li><strong>Rajoittamaton käyttöaika:</strong> Siivoa suuria tiloja ilman taukoja tai akun lataamista.</li>
+                            <li><strong>Huippukevyt rakenne:</strong> Vain 3,9 kg paino tekee liikkumisesta vaivatonta.</li>
+                            <li><strong>HEPA H13 -suodatus:</strong> Optimaalinen poistoilman puhtaus herkkiinkin kohteisiin.</li>
+                            <li><strong>Ecoharness-valjaat:</strong> Markkinoiden johtava ergonomia ja kestävä kehitys kohtaavat.</li>
+                        </ul>
+                    </div>
+                    <div class="bottom-column">
+                        <div class="specs-box">
+                            <div class="spec-header">Tekniset tiedot</div>
+                            <div class="spec-row"><span class="spec-label">Moottori</span><span class="spec-value">900 W</span></div>
+                            <div class="spec-row"><span class="spec-label">Alipaine</span><span class="spec-value">18,6 kPa</span></div>
+                            <div class="spec-row"><span class="spec-label">Imuteho</span><span class="spec-value">192 W</span></div>
+                            <div class="spec-row"><span class="spec-label">Melutaso</span><span class="spec-value">65,3 dB(A)</span></div>
+                            <div class="spec-row"><span class="spec-label">Ilmavirtaus</span><span class="spec-value">28,2 L/s</span></div>
+                            <div class="spec-row"><span class="spec-label">Virtalähde</span><span class="spec-value">18 m virtajohto</span></div>
+                            <div class="spec-row"><span class="spec-label">Säiliö</span><span class="spec-value">2,5 L</span></div>
+                            <div class="spec-row"><span class="spec-label">Takuu</span><span class="spec-value">2 vuotta</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Velo Go -->
+            <div id="VeloGo" class="tabcontent">
+                <div class="product-layout">
+                    <div class="product-description">
+                        <h1>Velo go - Kompakti, langaton ja kevyt</h1>
+                        <h4>TUOTEKOODI: VB002VG01A01 <span class="desktop-only">&emsp;|&emsp;</span> <span class="icon-group"><span class="material-symbols-outlined google-icon">battery_android_frame_4</span>Akkukäyttöinen</span></h4>
+                        <p>
+                            Velo go on kompakti ja kevyt akkukäyttöinen reppuimuri. Se on varustettu tehokkaalla moottorilla, joka tarjoaa käyttäjälle täydellisen
+                            liikkumisvapauden ja maksimaalisen tuottavuuden edellyttämän tehon.
+                            <br><br>
+                            Velo go on riittävän tehokas suurten toimitilojen siivoukseen ja tarpeeksi pieni mahtuakseen ahtaimpiinkin väleihin. Se on monipuolinen siivoustyökalu niin
+                            ammattilaisille kuin kotikäyttäjille, jotka vaativat ammattitason puhtautta.
+                            <br><br>
+                            Velo go on varustettu nelivaiheisella Hypercone-suodatusjärjestelmällä, joka jättää jälkeensä puhtaampaa ilmaa. Avoin, kertakäyttöinen pölypussi varmistaa, että
+                            huipputason imuteho säilyy myös pussin täyttyessä.
+                            <br><br>
+                            Laitteen tehokas Boost-toiminto antaa tarvittaessa ylimääräisen tehosysäyksen, jolla haastavimmatkin siivoustehtävät hoituvat vaivatta.
+                            <br><br>
+                            Huippuluokan litiumioniakku-teknologia ja hiiliharjaton moottori tekevät tästä akkukäyttöisestä reppuimurista kestävän ja suorituskykyisen kumppanin,
+                            jolla on pitkä käyttöikä.
+                            <br><br>
+                            Nauti tukevien Ecoharness-valjaiden ja vyötäröhihnan tuomasta mukavuudesta. Valjaissa on yhdistetty korkealaatuiset materiaalit ja kestävät kierrätystekstiilit,
+                            mikä takaa erittäin paksun ja pehmustetun istuvuuden.
+                            <br><br>
+                            Pacvac on sitoutunut kestävään kehitykseen: valjaat on valmistettu vähintään 50-prosenttisesti rPet-materiaalista (kierrätetystä
+                            polyeteenitereftalaatista), eli niiden raaka-aineena on käytetty kierrätettyjä muovisia vesipulloja.
+                            <br><br>
+                            Säädettävien olka- ja rintaremmien ansiosta valjaat tarjoavat jokaiselle käyttäjälle räätälöidyn ja mukavan siivouskokemuksen.
+                        </p>
+                        <div class="pdf">
+                            <a href="../pdf/Velo go (2024)_FI.pdf" target="_blank" rel="noopener noreferrer">Lataa PDF-esite</a>
+                        </div>
+                    </div>
+                    <img src="../images/velogo.png" alt="Velo Go image">
+                </div>
+                <div class="bottom-grid">
+                    <div class="bottom-column box">
+                        <h3>Miksi valita akkukäyttöinen reppuimuri?</h3>
+                        <ul style="line-height: 1.6; padding-left: 20px; font-size: 1rem;">
+                            <li><strong>Täydellinen liikkumisen vapaus:</strong> Voit liikkua esteettömästi tilasta toiseen.</li>
+                            <li><strong>Pääsy vaikeisiin kohteisiin:</strong> Puhdistat helposti paikat, joihin johdollinen imuri ei ylety.</li>
+                            <li><strong>Edistyksellinen akkuteknologia:</strong> Ladattavat litiumioniakut tarjoavat jopa 50 minuuttia käyttöaikaa.</li>
+                        </ul>
+                    </div>
+                    <div class="bottom-column">
+                    <div class="specs-box">
+                        <div class="spec-header">Tekniset tiedot</div>
+                        <div class="spec-row"><span class="spec-label">Moottori</span><span class="spec-value">250W (normaali); 400W (boost) 36V BLDC</span></div>
+                        <div class="spec-row"><span class="spec-label">Alipaine</span><span class="spec-value">14kPa (normaali); 18.8kPa (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Imuteho</span><span class="spec-value">85.9W (normaali); 124.5W (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Melutaso</span><span class="spec-value">&lt;69 dB(A)</span></div>
+                        <div class="spec-row"><span class="spec-label">Ilmavirtaus</span><span class="spec-value">21L/s (normaali); 22L/s (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Virtalähde</span><span class="spec-value">2 x 18V 6.0Ah (108Wh) Li-ion</span></div>
+                        <div class="spec-row"><span class="spec-label">Käyttöaika</span><span class="spec-value">50 min (normaali); 30 min (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Latausaika</span><span class="spec-value">1 h 45 min (2 akkua)</span></div>
+                        <div class="spec-row"><span class="spec-label">Suodatus</span><span class="spec-value">4-vaiheinen Hypercone</span></div>
+                        <div class="spec-row"><span class="spec-label">Säiliö</span><span class="spec-value">2.5 L</span></div>
+                        <div class="spec-row"><span class="spec-label">Paino</span><span class="spec-value">4.5 kg (akulla)</span></div>
+                        <div class="spec-row"><span class="spec-label">Mitat</span><span class="spec-value">275mm x 275mm x 400mm</span></div>
+                        <div class="spec-row"><span class="spec-label">Takuu</span><span class="spec-value">2v runko/moottori, 1v akku/laturi</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Superpro -->
+            <div id="VeloSuperpro" class="tabcontent">
+                <div class="product-layout">
+                    <div class="product-description">
+                        <h1>Superpro - Ammattisiivoojien ykkösvalinta</h1>
+                        <h4>TUOTEKOODI: VB002SU01A01 <span class="desktop-only">&emsp;|&emsp;</span> <span class="icon-group"><span class="material-symbols-outlined google-icon">power</span>Johdollinen</span></h4>
+                        <p>
+                            Alun perin Pacvac Superpro 700 -nimellä maineeseen nousseesta imurista tuli alan ikoni, ennen kuin se uudelleennimettiin lyhyesti Superproksi.
+                            Superpro-reppuimuri tarjoaa käyttäjälleen vapauden liikkua ja voimakkaan imutehon, mikä takaa korkean tuottavuuden ja perusteellisen puhtauden
+                            suurissa toimitiloissa ja kaupallisissa kohteissa.<br><br>
+                            Tämä imuri sisältää moottoria edeltävän kartiosuodattimen, joka takaa puhtaamman poistoilman. Korkealaatuinen moottori tuottaa voimakkaan imutehon,
+                            jolla suoriudut päivittäisistä imurointitehtävistä vaivatta.<br><br>
+                            Superpro on varustettu Ecoharness-valjailla, joissa on kolmitasoinen korkeussäätö, mukava paksu pehmustus ja hengittävä verkkoselkämys.
+                            Valjaat on valmistettu vähintään 50-prosenttisesti kierrätysmuovista.<br><br>
+                            18 metrin virtajohdon ansiosta kompakti Superpro mahdollistaa jopa 1159 m<sup>2</sup>:n siivousalan yhdellä kertaa.
+                            <br><br>
+                            Laitteen sivussa on lisäksi pistorasia, jota voidaan käyttää yhteensopivien sähökäyttöisten lattiasuulakkeiden ja lisävarusteiden virransyöttöön.
+                            <br><br>
+                            <small>*Superpro-pakkaukseen sisältyy viisi kertakäyttöistä paperista kartiopölypussia ja kaksi uudelleenkäytettävää SMS-kangaspölypussia.</small>
+                        </p>
+                        <div class="pdf">
+                            <a href="../pdf/Superpro Erp (2024)_FI.pdf" target="_blank" rel="noopener noreferrer">Lataa PDF-esite</a>
+                        </div>
+                    </div>
+                    <img src="../images/superpro.png" alt="Superpro image">
+                </div>
+                <div class="bottom-grid">
+                    <div class="bottom-column box">
+                        <h3>Miksi valita verkkovirralla toimiva reppuimuri?</h3>
+                        <ul style="line-height: 1.6; padding-left: 20px; font-size: 1rem;">
+                            <li><strong>Rajoittamaton käyttöaika:</strong> Siivoa suuria tiloja ilman taukoja.</li>
+                            <li><strong>Optimaalinen tuki:</strong> Ergonomiset valjaat ja remmit jakavat painon tasaisesti.</li>
+                            <li><strong>Parempi tuottavuus:</strong> Reppumalli on todistetusti nopeampi ja ketterämpi.</li>
+                        </ul>
+                    </div>
+                    <div class="bottom-column">
+                    <div class="specs-box">
+                        <div class="spec-header">Tekniset tiedot</div>
+                        <div class="spec-row"><span class="spec-label">Moottori</span><span class="spec-value">300W (normaali); 450W (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Alipaine</span><span class="spec-value">16,7 kPa (normaali); 21,6 kPa (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Imuteho</span><span class="spec-value">102,6 W (normaali); 154,2 W (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Melutaso</span><span class="spec-value">&lt;73,9 dB(A)</span></div>
+                        <div class="spec-row"><span class="spec-label">Ilmavirtaus</span><span class="spec-value">22,1 L/s (normaali); 25,4 L/s (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Virtalähde</span><span class="spec-value">2 x 18V 6.0Ah (108Wh) Li-ion-akut</span></div>
+                        <div class="spec-row"><span class="spec-label">Käyttöaika</span><span class="spec-value">Aktiivinen: 40 min (normaali); 26 min (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Latausaika</span><span class="spec-value">1 h 45 min (2 akkua)</span></div>
+                        <div class="spec-row"><span class="spec-label">Suodatus</span><span class="spec-value">4-vaiheinen Hypercone™-suodatin</span></div>
+                        <div class="spec-row"><span class="spec-label">Säiliö</span><span class="spec-value">5 L</span></div>
+                        <div class="spec-row"><span class="spec-label">Paino</span><span class="spec-value">5,7 kg (akulla, ilman letkua)</span></div>
+                        <div class="spec-row"><span class="spec-label">Mitat</span><span class="spec-value">400mm x 360mm x 530mm</span></div>
+                        <div class="spec-row"><span class="spec-label">Takuu</span><span class="spec-value">2v runko/moottori, 1v akut/laturi</span></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Superpro go -->
+            <div id="Superprogo" class="tabcontent">
+                <div class="product-layout">
+                    <div class="product-description">
+                        <h1>Superpro go</h1>
+                        <h4>TUOTEKOODI: VB002SG01A01 <span class="desktop-only">&emsp;|&emsp;</span> <span class="icon-group"><span class="material-symbols-outlined google-icon">battery_android_frame_4</span> Akkukäyttöinen</span></h4>
+                        <p>
+                            Reppuimuri tarjoaa käyttäjälleen vapauden liikkua ja voimakkaan imutehon, mikä takaa korkean tuottavuuden ja perusteellisen
+                            puhtauden suurissa toimitiloissa ja kaupallisissa kohteissa. <br><br>
+                            Laitteen tehokas Boost-toiminto antaa tarvittaessa ylimääräisen tehosysäyksen, jolla haastavimmatkin siivoustehtävät hoituvat vaivatta.<br><br>
+                            Tämä imuri sisältää moottoria edeltävän kartiosuodattimen, joka takaa puhtaamman poistoilman. Korkealaatuinen moottori tuottaa voimakkaan imutehon,
+                            jolla suoriudut päivittäisistä imurointitehtävistä vaivatta.<br><br>
+                            Superpro go on varustettu Ecoharness-valjailla, joissa on kolmitasoinen korkeussäätö, mukava paksu pehmustus ja hengittävä verkkoselkämys.
+                            Valjaat on valmistettu vähintään 50-prosenttisesti kierrätysmuovista.
+                            <br><br>
+                            <small>*Superpro-pakkaukseen sisältyy viisi kertakäyttöistä paperista kartiopölypussia ja kaksi uudelleenkäytettävää SMS-kangaspölypussia.</small>
+                        </p>
+                        <div class="pdf">
+                            <a href="../pdf/Superpro go (2024)_FI.pdf" target="_blank" rel="noopener noreferrer">Lataa PDF-esite</a>
+                        </div>
+                    </div>
+                    <img src="../images/superprogo.png" alt="Superpro Go image">
+                </div>
+                <div class="bottom-grid">
+                    <div class="bottom-column box">
+                        <h3>Miksi valita akkukäyttöinen reppuimuri?</h3>
+                        <ul style="line-height: 1.6; padding-left: 20px; font-size: 1rem;">
+                            <li><strong>Täydellinen liikkumisen vapaus:</strong> Voit liikkua esteettömästi tilasta toiseen.</li>
+                            <li><strong>Pääsy vaikeisiin kohteisiin:</strong> Puhdistat helposti paikat, joihin johdollinen imuri ei ylety.</li>
+                            <li><strong>Edistyksellinen akkuteknologia:</strong> Jopa 50 minuuttia jatkuvaa käyttöaikaa.</li>
+                        </ul>
+                    </div>
+                    <div class="bottom-column">
+                    <div class="specs-box">
+                        <div class="spec-header">Tekniset tiedot</div>
+                        <div class="spec-row"><span class="spec-label">Moottori</span><span class="spec-value">300W (normal); 450W (boost) BLDC</span></div>
+                        <div class="spec-row"><span class="spec-label">Alipaine</span><span class="spec-value">16,7 kPa (normal); 21,6 kPa (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Imuteho</span><span class="spec-value">102,6 W (normal); 154,2 W (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Melutaso</span><span class="spec-value">&lt;73,9 dB(A)</span></div>
+                        <div class="spec-row"><span class="spec-label">Ilmavirtaus</span><span class="spec-value">22,1 L/s (normal); 25,4 L/s (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Virtalähde</span><span class="spec-value">2 x 18V 6.0Ah (108Wh) Li-ion</span></div>
+                        <div class="spec-row"><span class="spec-label">Käyttöaika</span><span class="spec-value">40 min (normal); 26 min (boost)</span></div>
+                        <div class="spec-row"><span class="spec-label">Latausaika</span><span class="spec-value">1 h 45 min (2 akkua)</span></div>
+                        <div class="spec-row"><span class="spec-label">Suodatus</span><span class="spec-value">4-vaiheinen Hypercone™</span></div>
+                        <div class="spec-row"><span class="spec-label">Säiliö</span><span class="spec-value">5 L</span></div>
+                        <div class="spec-row"><span class="spec-label">Paino</span><span class="spec-value">5,7 kg (akulla)</span></div>
+                        <div class="spec-row"><span class="spec-label">Mitat</span><span class="spec-value">400mm x 360mm x 530mm</span></div>
+                        <div class="spec-row"><span class="spec-label">Takuu</span><span class="spec-value">2v runko/moottori, 1v akku/laturi</span></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="info-text">
+                <h2>Kaipaatko apua valinnassa?</h2>
+                <p>Asiantuntijamme auttavat sinua löytämään juuri sinun kohteeseesi sopivan Pacvac-ratkaisun.</p>
+                <span class="button2"><a href="contact">Ota meihin yhteyttä</a></span>
+            </div>    
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <a href="home"><img src="../logo/hbn-pacvac-logo.png"></a>
+            <div class="footer-content">
+                <p>© 2026 Pacvac by HBN Finland Oy</p>
+                <div class="footer-pdf">
+                    <a href="../pdf/Tietosuojaseloste_pacvac.pdf">Tietosuojaseloste</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- Takaisin ylös -painike -->
+    <button id="backToTop" class="material-symbols-outlined">arrow_upward</button>
+    </main>
+
+    <script>
+        function openProduct(evt, productName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(productName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    
+
+</body>
+</html>

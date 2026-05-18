@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* --- PERUSASETUKSET --- */
+html, body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex: 1;
+    background-image: url('../images/pacvac-tausta2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+}
+
+/* --- PÄÄSISÄLTÖ --- */
+.content {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 5rem;
+}
+
+/* --- TABS --- */
+.tab-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0 4rem 0;
+    flex-wrap: wrap;
+    z-index: 500;
+}
+
+.tab button {
+    margin: 0 0.5rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+    background: transparent;
+    border: none;
+}
+
+.tab button:hover, .tab button.active {
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+
+/* --- TUOTE-LAYOUT --- */
+.tabcontent {
+    display: none;
+    padding: 0 2rem;
+    max-width: 1200px;
+    width: 90%;
+    animation: fadeIn 0.8s ease-out;
+}
+
+
+.product-layout {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items:flex-start;
+    text-align: left; 
+    margin-bottom: 5rem;
+}
+
+.product-description {
+    flex: 1;
+    color: #000;
+}
+
+.product-description h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-description h4 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.product-layout img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom-grid {
+    display: flex;
+    gap: 2rem;
+    text-align: left;
+    align-items: flex-start; 
+    width: 100%;
+}
+
+.bottom-column {
+    flex: 1;
+}
+
+/* Keltainen infolaatikko vasemmalla */
+.bottom-column.box {
+    background-color: rgba(255, 253, 240, 0.5); 
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+.bottom-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Tekniset tiedot -laatikko oikealla */
+.specs-box {
+    background-color: rgba(255, 253, 240, 0.5);
+    border-radius: 1.5rem;
+    overflow: hidden; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.spec-header {
+    background: #fffdf0;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-row:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02); 
+}
+
+.spec-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.spec-value {
+    color: #555;
+    text-align: right;
+}
+
+/* Alareunan info-teksti */
+
+.info-text {
+    max-width: 800px;
+    margin: 6rem auto 2rem auto; 
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.info-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+/* Napit */
+
+.button2 {
+    display: inline-block;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #000000;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.button2 a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.button2 a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+.pdf {
+    margin-top: 2rem;
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 0.8rem 2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.pdf:hover {
+    background-color: #ffe876;
+    color: #fff;
+    font-weight: bold;
+}
+
+.pdf a {
+    text-decoration: none;
+    color: black;
+}
+
+.google-icon {
+    vertical-align: middle;
+    font-size: 1.5rem !important;
+    margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+
+    .content {
+        margin-top: 5rem;
+    }
+
+    .product-layout {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center; 
+        gap: 2rem; 
+    }
+
+    .product-layout img {
+        width: 200px; 
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto; 
+    }
+
+    .product-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .product-description h1 {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .product-description h4 {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: center;
+        text-align: center;
+        gap: 0.6rem;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .product-description h4 .icon-group {
+        display: inline-flex;
+        align-items: center;   
+        gap: 0.4rem;            
+    }
+
+    .product-description h4 .google-icon {
+        margin: 0 !important;
+        font-size: 1.4rem !important; 
+    }
+
+    .product-description p {
+        text-align: center;
+    }
+
+    .tab-wrapper {
+        justify-content: center;
+        width: 100%;
+        margin: 2rem 0; 
+        padding: 0;
+    }
+
+    .tab {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .tab button {
+        font-size: 1.2rem; 
+        padding: 0.5rem 1rem;
+        margin: 0;
+    }
+
+    .bottom-column.box {
+        padding: 2rem 1.5rem; 
+    }
+    
+    .bottom-column.box ul {
+        display: inline-block; 
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    .bottom-column h3 {
+        text-align: center; 
+    }
+
+    .bottom-grid {
+        flex-direction: column;
+        align-items: stretch; 
+    }
+
+    .spec-row {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .tabcontent {
+        max-width: 1300px;
+    }
+}

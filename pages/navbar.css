@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    height: 8.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #301304;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    width: 100%;
+}
+
+.button {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button img{
+    width: 10rem;
+    height: auto;
+    margin: auto 0.5rem;
+    padding-left: 3rem;
+}
+
+.nav_menu ul {
+    margin: auto 1rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu ul li {
+    list-style: none;
+}
+
+.nav_menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1rem;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.button a.active {
+  font-weight: bold;
+}
+
+.button a:hover {
+  font-weight: bold;
+}
+
+.nav_hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding-right: 2rem;
+    margin-left: auto; 
+}
+
+.nav_hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #301304;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 850px) {
+    .nav {
+        justify-content: space-between;
+        height: 6rem;
+    }
+
+    .nav_hamburger {
+        display: flex; 
+    }
+
+    .nav_menu {
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .nav.menu-open {
+        background-color: #fffdf0 !important;
+    }
+
+    .nav_menu.active {
+        display: block;
+        background-color: #fffdf0;
+    }
+
+    .nav_menu ul {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .nav_menu ul li a {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+
+    .button img {
+        width: 7rem; 
+        padding-left: 1rem;
+    }
+}
