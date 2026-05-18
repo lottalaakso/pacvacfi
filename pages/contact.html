@@ -41,15 +41,14 @@
     <!-- Main content goes here -->
     <main class="page">
 
-        
-
     <div class="content">
 
         <div class="main-row">
 
         <div class="column">
             <div class="form-container">
-                <form action="submit_form.php" method="POST">
+                <!-- KORJATTU: id lisätty, action ja method poistettu -->
+                <form id="contact-form">
                     <label for="name">Nimi:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -62,7 +61,8 @@
                     <label for="message">Viesti:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
 
-                    <button type="submit">Lähetä</button>
+                    <!-- KORJATTU: painike muutettu inputiksi, jotta JS-koodi löytää sen -->
+                    <input type="submit" value="Lähetä">
                     <p>Painamalla "Lähetä" hyväksyt, että käsittelemme antamiasi tietoja yhteydenottoosi vastaamiseksi. Lue lisää <a href="../pdf/Tietosuojaseloste_pacvac.pdf">tietosuojaselosteesta</a>.</p>
                 </form>
             </div>
@@ -85,7 +85,7 @@
                 <div class="contacts-grid">
                     
                     <div class="contact-card">
-                        <h3></a>Alena Tyndyk</a></h3>
+                        <h3>Alena Tyndyk</h3>
                         <p><a href="mailto:alena@pacvac.fi">alena@pacvac.fi</a></p>
                         <p><a href="tel:+358503084926" class="only-mobile">+358 50 308 4926</a></p>
                         <p><span class="only-desktop">+358 50 308 4926</span></p>
@@ -104,8 +104,6 @@
         </div>
 
         </div>
-
-        
             
     </div>
 
@@ -140,10 +138,10 @@
     emailjs.sendForm('default_service', 'template_dl9aa2l', form)
       .then(function(response) {
         form.reset();
-        btn.value = 'Send message';
+        btn.value = 'Lähetä'; // Palautetaan suomenkielinen teksti onnistumisen jälkeen
         showPopup('Your message has been sent successfully!');
       }, function(error) {
-        btn.value = 'Send message';
+        btn.value = 'Lähetä'; // Palautetaan suomenkielinen teksti virheen jälkeen
         showPopup('Oops! Something went wrong. Please try again.');
       });
   });
@@ -159,5 +157,4 @@
     document.getElementById('popup').style.display = 'none';
   }
 </script>
-
 </html>
