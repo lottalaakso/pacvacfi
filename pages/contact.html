@@ -47,7 +47,6 @@
 
         <div class="column">
             <div class="form-container">
-                <!-- KORJATTU: id lisätty, action ja method poistettu -->
                 <form id="contact-form">
                     <label for="name">Nimi:</label>
                     <input type="text" id="name" name="name" required>
@@ -61,8 +60,7 @@
                     <label for="message">Viesti:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
 
-                    <!-- KORJATTU: painike muutettu inputiksi, jotta JS-koodi löytää sen -->
-                    <input type="submit" value="Lähetä">
+                    <button type="submit">Lähetä</button>
                     <p>Painamalla "Lähetä" hyväksyt, että käsittelemme antamiasi tietoja yhteydenottoosi vastaamiseksi. Lue lisää <a href="../pdf/Tietosuojaseloste_pacvac.pdf">tietosuojaselosteesta</a>.</p>
                 </form>
             </div>
@@ -132,16 +130,16 @@
     event.preventDefault();
 
     const form = event.target;
-    const btn = form.querySelector('input[type="submit"]');
-    btn.value = 'Sending...';
+    const btn = form.querySelector('[type="submit"]');
+    btn.textContent = 'Sending...';
 
     emailjs.sendForm('default_service', 'template_dl9aa2l', form)
       .then(function(response) {
         form.reset();
-        btn.value = 'Lähetä'; // Palautetaan suomenkielinen teksti onnistumisen jälkeen
+        btn.textContent = 'Lähetä'; 
         showPopup('Your message has been sent successfully!');
       }, function(error) {
-        btn.value = 'Lähetä'; // Palautetaan suomenkielinen teksti virheen jälkeen
+        btn.textContent = 'Lähetä'; 
         showPopup('Oops! Something went wrong. Please try again.');
       });
   });
