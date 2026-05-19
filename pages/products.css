@@ -242,6 +242,10 @@ body {
 
 @media (max-width: 900px) {
 
+    *, *::before, *::after {
+        box-sizing: border-box; 
+    }
+
     .content {
         margin-top: 5rem;
     }
@@ -334,7 +338,6 @@ body {
     .bottom-column.box ul {
         display: inline-block; 
         text-align: left;
-        padding-left: 1.5rem;
     }
 
     .bottom-column h3 {
@@ -343,12 +346,18 @@ body {
 
     .bottom-grid {
         flex-direction: column;
-        align-items: stretch; 
+        align-items: center;
+    }
+
+    .bottom-column {
+        width: 100%;
     }
 
     .spec-row {
-        padding: 0.8rem 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
     }
+
 }
 
 @media (min-width: 1440px) {

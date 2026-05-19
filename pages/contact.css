@@ -201,50 +201,7 @@ textarea {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .main-row {
-        flex-direction: column-reverse; 
-        padding-top: 10rem;    
-        padding-bottom: 3rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        gap: 2rem;            
-    }
 
-    .column {
-        padding-top: 0 !important; 
-        width: 100%;
-    }
-
-    .txt-container {
-        width: 90%;
-        text-align: center; 
-    }
-
-    .txt-container h1 {
-        font-size: 1.8rem;   
-        margin-top: 0;
-    }
-
-    .contacts-grid {
-        flex-direction: column; 
-        align-items: center;
-        gap: 1.5rem;
-        margin-top: 1.5rem;
-    }
-
-    .form-container {
-        padding: 1.5rem;
-        max-width: 90%;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="company"],
-    textarea {
-        margin-bottom: 1rem;
-    }
-}
 
 @media (max-width: 1024px) {
     .only-mobile {
@@ -294,6 +251,49 @@ textarea {
     .form-container {
         padding: 1.5rem;
         max-width: 60%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="company"],
+    textarea {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-row {
+        flex-direction: column-reverse; 
+        padding-top: 10rem;    
+        gap: 2rem;    
+        width: 100%;
+    }
+
+    .column {
+        padding-top: 0 !important; 
+        width: 100%;
+    }
+
+    .txt-container {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .txt-container h1 {
+        font-size: 1.8rem;   
+        margin-top: 0;
+    }
+
+    .contacts-grid {
+        flex-direction: column; 
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+        max-width: 100%;
     }
 
     input[type="text"],
