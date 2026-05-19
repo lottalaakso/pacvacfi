@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="topbutton.css">
     <script src="topbutton.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="../logo/pacvac-icon.png">
+    <meta name="description" content="Ota yhteyttä Pacvac-asiantuntijoihimme. Täytä yhteydenottolomake tai löydä oman alueesi myyjä Suomessa – autamme mielellämme kaikissa kysymyksissä!">
 </head>
 <body>
     <!--Navbar-->
@@ -69,8 +71,8 @@
 
         <div id="popup" class="popup">
         <div class="popup-content">
-          <p id="popup-message">Your message has been sent successfully!</p>
-          <button onclick="closePopup()">Close</button>
+            <p id="popup-message">Viestisi on lähetetty onnistuneesti!</p>
+            <button onclick="closePopup()">Sulje</button>
         </div>
       </div>
 
@@ -137,10 +139,10 @@
       .then(function(response) {
         form.reset();
         btn.textContent = 'Lähetä'; 
-        showPopup('Your message has been sent successfully!');
+        showPopup('Viestisi on lähetetty onnistuneesti!');
       }, function(error) {
         btn.textContent = 'Lähetä'; 
-        showPopup('Oops! Something went wrong. Please try again.');
+        showPopup('Hups! Jotain meni pieleen. Yritä uudelleen.');
       });
   });
 
